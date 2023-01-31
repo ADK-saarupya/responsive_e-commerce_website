@@ -1,0 +1,32 @@
+.links a{
+    color: #102A42 !important;
+}
+.links a:hover{
+    color: #BA5D2C !important;
+}
+.cartLogo .cart{
+    color: #102A42 !important;
+}
+.cartLogo .cart:hover{
+    color: #305578 !important;
+    
+}
+.aboutUs{
+    color: #617D98;
+    background-color: #f1f5f8;
+    padding:  2rem 0 2rem 4rem;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Andika', sans-serif;
+}
+.aboutUsDescription{
+    width: 80vw;
+    margin: auto;
+    padding: 2rem;
+    color: #617D98;
+    font-family: 'Andika', sans-serif;
+    line-height: 1.6rem;
+    word-spacing: 0.2rem;
+    text-align: justify;
+
+}

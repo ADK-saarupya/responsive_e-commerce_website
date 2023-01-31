@@ -1,0 +1,180 @@
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    width: 95vw;
+    margin: auto;
+
+}
+.bar{
+    display: none;
+    color: white;
+    margin-left: 1rem;
+    background-color: #BA5D2C;
+    border-radius: 5px;
+    width: 1.8rem;
+    height: 1.6rem;
+    
+}
+.smallDevicesLinks{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 1rem;
+    height: 95vh;
+    flex-direction: column;
+    background-color: grey;
+    width: 70vw;
+    position: absolute;
+    text-align: center;
+    font-family: 'Andika', sans-serif;
+    
+
+}
+.smallDevicesLinks img{
+    width: 5rem;
+    
+
+}
+.smallDevicesLinks a{
+    text-decoration: none;
+    color: white;
+    margin-top: 1.5rem;
+}
+.smallDevicesLinks a:hover{
+    color: #BA5D2C;
+}
+.hideNavBar{
+    position: relative;
+    top: 0.5rem;
+    left: 45%;
+    color: red;
+    cursor: pointer;
+}  
+
+.links a{
+    text-decoration: none;
+    margin: 0 1.5rem;
+    font-family: 'Andika', sans-serif;
+    font-size: 23px;
+    color: white;
+    transition: all 0.5s;
+    
+}
+.links a:hover{
+    color: #BA5D2C;
+}
+.logo{
+    margin-right: 10rem;
+}
+.cartLogo{
+    display: flex;
+}
+.cartLogo .cart{
+    color: white;
+    cursor: pointer;
+}
+.cartLogo .cart:hover{
+    color: bisque;
+    
+}
+.cartLogo #cartNumber{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 0.1px solid #BA5D2C;
+    border-radius: 50%;
+    background-color:#BA5D2C;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+    left: -1rem;
+    top: -0.8rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.explore{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/main-bcg.jpeg) center;
+    min-height: 100vh;
+    margin-top: -6rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+
+}
+.exploreText{
+    margin-left: 3.5rem;
+    color: white;
+}
+.highlight{
+    font-size: 80px;
+    font-weight: 500;
+    padding: 0.3rem 0;
+    font-family: 'Caveat', cursive;
+
+}
+.followText{
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Andika', sans-serif;
+}
+#show{
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 18px;
+    margin: 1rem 0;
+    background: none;
+    color:white;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    transition: all 0.6s;
+    letter-spacing: 1mm;
+}
+#show:hover{
+    background-color: white;
+    color: #BA5D2C;
+    
+}
+/* small devices */
+@media only screen and (max-width:762px){
+    .bar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .links{
+        display: none;
+    }
+    .logo{
+        margin-right: 0;
+    }
+    .exploreText{
+        margin-left: 0.5rem;
+    }
+    .highlight{
+        font-size: 50px;
+        font-weight: 500;
+    }
+    .followText{
+        font-size: 25px;
+        font-weight: 400;
+        font-family: 'Andika', sans-serif;
+    }
+
+}
+@media only screen and (min-width:763px){
+    .smallDevicesLinks{
+        display: none;
+    }
+}
+
+
+

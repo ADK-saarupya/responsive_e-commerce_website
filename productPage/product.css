@@ -1,0 +1,631 @@
+.links a{
+    color: #102A42 !important;
+}
+.links a:hover{
+    color: #BA5D2C !important;
+}
+.cartLogo .cart{
+    color: #102A42 !important;
+}
+.cartLogo .cart:hover{
+    color: #305578 !important;
+    
+}
+.productTitle{
+    color: #617D98;
+    background-color: #f1f5f8;
+    padding:  2rem 0 2rem 4rem;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Andika', sans-serif;
+}
+.productDisplay{
+    width: 90vw;
+    margin: auto;
+    padding: 2rem;
+    font-family: 'Andika', sans-serif;
+    display: grid;
+    grid-template-columns: 20% 80%;
+
+}
+.productEnquiry{
+    width: fit-content;
+}
+#searchProduct{
+    height: 2rem;
+    border-radius: 5px;
+    background-color:  #dae8f2;
+    border: none;
+    font-size: 18px;
+    width: 12rem;
+    padding-left: 4px;
+}
+.companyList{
+    padding: 1rem 0;
+}
+.companyTitle{
+    color: #102A42;
+    font-weight: 600;
+}
+.companyName{
+    color:#617D98;
+    margin: 0.5rem 0;
+    text-transform: capitalize;
+    cursor: pointer;
+    width: 3.8rem;
+}
+.companyName:hover{
+    color: #BA5D2C;
+}
+.valueTitle{
+    color: #617D98;
+}
+.productList{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap:10px;
+    
+}
+
+.product{
+    width: fit-content;
+    text-align: center;
+    cursor: pointer;
+    text-transform: capitalize;
+    
+}
+.shopCart{
+    color: #BA5D2C;
+
+}
+.shopCart:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.product img{
+    width: 18rem;
+    height: 10rem;
+    border-radius: 7px;
+}
+.productInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+}
+.productName{
+    color:#617D98;
+}
+.productPrice{
+    color: #324d67;
+    font-weight: 600;
+}
+.priceFilter{
+    font-size: 10px;
+    
+}
+
+.singleProductInformation{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    font-family: 'Andika', sans-serif;
+    justify-content: space-between;
+    background-color: rgb(246, 244, 240);
+    padding: 1rem;
+    position: fixed;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   top: 0;
+   margin: auto;
+   height: fit-content;
+   box-shadow: 0 0 0 100vw rgba(0,0,0,.6);
+   visibility: hidden;
+}
+.singleProductInformation img{
+    height:18rem ;
+    width:25rem ;
+    border-radius: 7px;
+}
+.singleProductInfo{
+    width: 50%;
+}
+.nameQuantity{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.qty{
+    display: flex;
+    font-size: 25px;
+    font-weight: 600;
+    
+}
+#increase,#decrease{
+    cursor: pointer;
+    user-select: none;
+}
+.qty p{
+    margin:0  0.4rem;
+}
+#quantity{
+    color: #BA5D2C;
+    user-select: none;
+}
+
+#nameOfPurchasedItem{
+    font-size: 25px;
+    color:#102A42 ;
+    text-transform: capitalize;
+}
+
+#companyOfPurchasedItem{
+    color: rgb(212, 191, 191);
+    font-family: 'Caveat', cursive!important;
+    margin-bottom: 0.5rem;
+}
+#priceOfPurchasedItem{
+    color: #324d67;
+    font-weight: 600;
+}
+#informationOfPurchasedItem{
+    color: #617D98;
+    text-align: justify;
+    line-height: 1.4rem;
+}
+#addToCart{
+    background-color: #BA5D2C;
+    color: white;
+    padding: 0.4rem;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.2s linear;
+}
+#addToCart:hover{
+    color: black;
+    background-color: #d39675;
+    transition: 0.2s linear;
+}
+.purchaseList{
+    height: 100vh;
+    font-family: 'Andika',sans-serif;
+    background-color: #f1f5f8;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 0;
+    right: 0;
+    position: fixed;
+   visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 0 0 100vw rgba(0,0,0,.3);
+    overflow-y: scroll;
+}
+.showPurchaseList{
+   visibility: visible;
+    opacity: 1;
+    transition: opacity 0.4s linear;
+}
+#headOfPurchasedList{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+
+}
+.hidePurchasedList{
+    color: red;
+    cursor: pointer;
+    margin-top: 0.4rem;
+    padding-left: 0.4rem;
+}
+
+#bagTitle{
+    font-size: 40px;
+    text-align: center;
+    font-family: "caveat",cursive;
+    color: #617D98;
+   
+}
+.purchasedItem{
+    width: 95%;
+    margin: 1rem auto;
+}
+.purchasedProduct{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+.productPicName{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+
+}
+.name{
+    text-transform: capitalize;
+}
+.remove{
+    width: fit-content;
+}
+.productInformation{
+    align-items: center;
+}
+#smallImage{
+    border-radius: 6px;
+}
+.namePrice{
+    line-height: 1rem;
+    font-size: 13px;
+}
+.priceOfProduct{
+    font-size: 11px;
+}
+.remove{
+    font-size: 10px;
+    cursor: pointer;
+    color: #324d67;
+}
+.remove:hover{
+    color: red;
+    text-decoration: underline;
+}
+.aboutQuantity{
+    color: #BA5D2C;
+    font-size: 18px;
+    font-weight: 600;
+}
+.total{
+    font-size: 20px;
+    padding-bottom: 1rem;
+    color: #102A42;
+    text-align: center;
+}
+#price{
+    color: #BA5D2C;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .productDisplay{
+        display: grid;
+        grid-template-columns: 100%;
+        width: 80vw;
+    }
+    .productEnquiry{
+        margin: auto;
+       
+    }
+    .productList{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    .product{
+        margin: 1rem 0;
+    }
+    .product img{
+        width: 60vw;
+        height: 12rem;
+        
+    }
+    .singleProductInformation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70vw;
+        height: 60vh;
+        font-family: 'Andika', sans-serif;
+        justify-content: space-between;
+        background-color: rgb(246, 244, 240);
+        padding: 1rem;
+        position: fixed;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       top: 0;
+       margin: auto;
+       box-shadow: 0 0 0 100vw rgba(0,0,0,.6);
+       visibility: hidden;
+       text-align: center;
+    }
+    .singleProductInformation img{
+        height:7rem ;
+        width:11rem ;
+        border-radius: 5px;
+    }
+    .singleProductInfo{
+        width: 90%;
+        font-size: 9px;
+    }
+    .nameQuantity{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .qty{
+        font-size: 11px;
+    }
+    #nameOfPurchasedItem{
+        font-size: 15px;
+        color:#102A42 ;
+        text-transform: capitalize;
+    }
+
+    .purchaseList{
+        height: 100vh;
+        font-family: 'Andika',sans-serif;
+        background-color: #f1f5f8;
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        top: 0;
+        right: 0;
+        position: fixed;
+       visibility: hidden;
+        opacity: 0;
+        box-shadow: 0 0 0 100vw rgba(0,0,0,.3);
+        overflow-y: scroll;
+    }
+    .showPurchaseList{
+        visibility: visible;
+         opacity: 1;
+         transition: opacity 0.4s linear;
+     }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .productDisplay{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .productEnquiry{
+        margin: auto;
+       
+    }
+    .productList{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .product{
+        margin: 1rem 0;
+    }
+    .product img{
+        width: 15rem;
+        height: 8rem;
+        border-radius: 7px;
+        
+    }
+    .singleProductInformation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70vw;
+        height: 60vh;
+        font-family: 'Andika', sans-serif;
+        justify-content: space-between;
+        background-color: rgb(246, 244, 240);
+        padding: 1rem;
+        position: fixed;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       top: 0;
+       margin: auto;
+       box-shadow: 0 0 0 100vw rgba(0,0,0,.6);
+       visibility: hidden;
+       text-align: center;
+    }
+    .singleProductInformation img{
+        height:7rem ;
+        width:11rem ;
+        border-radius: 5px;
+    }
+    .singleProductInfo{
+        width: 90%;
+        font-size: 9px;
+    }
+    .nameQuantity{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .qty{
+        font-size: 11px;
+    }
+    #nameOfPurchasedItem{
+        font-size: 15px;
+        color:#102A42 ;
+        text-transform: capitalize;
+    }
+
+   
+    .purchaseList{
+        height: 100vh;
+        font-family: 'Andika',sans-serif;
+        background-color: #f1f5f8;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        top: 0;
+        right: 0;
+        position: fixed;
+       visibility: hidden;
+        opacity: 0;
+        box-shadow: 0 0 0 100vw rgba(0,0,0,.3);
+        overflow-y: scroll;
+    }
+    .showPurchaseList{
+        visibility: visible;
+         opacity: 1;
+         transition: opacity 0.4s linear;
+     }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        overflow-x: hidden;
+    }
+    .productDisplay{
+        display: grid;
+        grid-template-columns: 10% 90%;
+        grid-column-gap:90px ;
+    }
+    #searchProduct{
+        width: 9rem;
+    }
+    .productList{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap:10px;
+        
+    }
+    .product img{
+        width: 15rem;
+        height: 8rem;
+        border-radius: 7px;
+    }
+    .singleProductInformation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70vw;
+        height: 60vh;
+        font-family: 'Andika', sans-serif;
+        justify-content: space-between;
+        background-color: rgb(246, 244, 240);
+        padding: 1rem;
+        position: fixed;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       top: 0;
+       margin: auto;
+       box-shadow: 0 0 0 100vw rgba(0,0,0,.6);
+       visibility: hidden;
+       text-align: center;
+    }
+    .singleProductInformation img{
+        height:7rem ;
+        width:11rem ;
+        border-radius: 5px;
+    }
+    .singleProductInfo{
+        width: 90%;
+        font-size: 9px;
+    }
+    .nameQuantity{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .qty{
+        font-size: 11px;
+    }
+    #nameOfPurchasedItem{
+        font-size: 15px;
+        color:#102A42 ;
+        text-transform: capitalize;
+    }
+
+    .purchaseList{
+        height: 100vh;
+        font-family: 'Andika',sans-serif;
+        background-color: #f1f5f8;
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        top: 0;
+        right: 0;
+        position: fixed;
+       visibility: hidden;
+        opacity: 0;
+        box-shadow: 0 0 0 100vw rgba(0,0,0,.3);
+        overflow-y: scroll;
+    }
+    .showPurchaseList{
+        visibility: visible;
+         opacity: 1;
+         transition: opacity 0.4s linear;
+     }
+
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1230px) {
+    body{
+        overflow-x: hidden;
+    }
+    .productDisplay{
+        display: grid;
+        grid-template-columns: 10% 90%;
+        grid-column-gap:80px ;
+    }
+    #searchProduct{
+        width: 9rem;
+    }
+    .productList{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-row-gap:10px;
+        
+    }
+    .singleProductInformation{
+        display: flex;
+        align-items: center;
+        width: 70%;
+        margin: auto;
+        font-family: 'Andika', sans-serif;
+        justify-content: space-between;
+        background-color: rgb(246, 244, 240);
+        padding: 1rem;
+        position: fixed;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       top: 0;
+       margin: auto;
+       height: fit-content;
+       box-shadow: 0 0 0 100vw rgba(0,0,0,.6);
+       visibility: hidden;
+    }
+    .singleProductInformation img{
+        height:14rem ;
+        width:19rem ;
+        border-radius: 7px;
+    }
+    .singleProductInfo{
+        width: 50%;
+        font-size: 12px;
+    }
+    
+    .product img{
+        width: 14rem;
+        height: 7rem;
+        border-radius: 7px;
+    }
+}

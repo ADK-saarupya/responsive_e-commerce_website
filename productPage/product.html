@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comfy_store</title>
+    <link rel="stylesheet" href="../mainStyle.css">
+    <link rel="stylesheet" href="../mainPage/home.css">
+    <link rel="stylesheet" href="../productPage/product.css">
+</head>
+
+<body>
+    <nav class="navBar">
+        <div class="bar">
+            <i class="fa-solid fa-bars" id="bar"></i>
+        </div>
+
+        <!-- div for large devices -->
+        <div class="links">
+
+            <a href="../mainPage/index.html">Home</a>
+            <a href="../productPage/product.html">Products</a>
+            <a href="../aboutPage/about.html">About</a>
+        </div>
+
+
+        <div class="logo">
+            <img src="../images/logo-black.svg">
+        </div>
+        <div class="cartLogo">
+            <i class="fa-solid fa-2x fa-cart-shopping cart"></i>
+            <p id="cartNumber">0</p>
+        </div>
+    </nav>
+
+    <!-- navBar for small devices -->
+
+    <div class="smallDevicesLinks">
+        <i class="fa-solid fa-xmark hideNavBar"></i>
+        <img src="../images/logo-white.svg">
+        <a href="../mainPage/index.html">Home</a>
+        <a href="../productPage/product.html">Products</a>
+        <a href="../aboutPage/about.html">About</a>
+    </div>
+    <!-- end of navBar for small devices -->
+
+    <section class="productTitle">
+        <p>Our Products</p>
+    </section>
+
+    <section class="productDisplay">
+        <div class="productEnquiry">
+            <div>
+                <input type="text" id="searchProduct" placeholder="Search...">
+            </div>
+            <div class="companyList">
+                <p class="companyTitle">Company</p>
+                <div class="companies">
+                    <!-- all companies name -->
+                </div>
+            </div>
+            <div class="priceFilter">
+                <input type="range" name="range" id="valueProgressBar" min="" max="" value="">
+                <p class="valueTitle">Value:<span id="value"></span></p>
+            </div>
+        </div>
+        <div class="productList">
+            <!-- all products list -->
+        </div>
+
+    </section>
+
+    <!-- information about single product -->
+    <section class="singleProductInformation">
+       
+    </section>
+
+    <!-- purchased list -->
+    <section class="purchaseList">
+        <div>
+        <div id="headOfPurchasedList">
+            <i class="fa-solid fa-xmark hidePurchasedList"></i>
+            <p id="bagTitle">Your Bag</p>
+        </div>
+        <div class="purchasedItem">
+           <!-- purchased item list -->
+            
+
+        </div>
+        </div>
+        <div class="total">Total: NRP <span id="price">00</span></div>
+    </section>
+
+
+    <script src="https://kit.fontawesome.com/cdc83a5bc5.js" crossorigin="anonymous"></script>
+    <script src="product.js" type="module"></script>
+</body>
+
+</html>
